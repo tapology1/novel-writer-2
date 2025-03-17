@@ -49,7 +49,7 @@ many sections of the book which are from the perspective of other characters, es
 friends and the antagonist."""
 
 # The chat model that will be used
-writer = Gemini10Writer(system_context)
+writer = OpenAIWriter(system_context)
 
 # The number of paragraphs to write at a time.
 paragraphs_per_block = 5
