@@ -1,0 +1,130 @@
+{
+  "Name": "Novel Refinement-2",
+  "CreationDate": "2025-3-17",
+  "Commands": [
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "title=3 - Google Sheets",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_CTRL+KEY_C}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${!clipboard}",
+      "Value": "global_chapter_name",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_RIGHT}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_CTRL+KEY_C}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${!clipboard}",
+      "Value": "global_chapter_content",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_DOWN}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_LEFT}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "title=Chat - Merlin AI",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "editContent",
+      "Target": "xpath=//*[@id=\"tiptap-container\"]/div",
+      "Value": "You are a top-grossing Hollywood screenwriter known for your exceptional ability to polish rough drafts into compelling final versions. Your specialty is maintaining the core story while elevating the prose, pacing, and character development. Take the draft below and transform it into a polished chapter with these improvements:  1) START WITH A CHAPTER TITLE: Create an evocative title that captures the essence of the chapter.  2) TIGHTEN THE PROSE: Eliminate redundancies, simplify overcomplicated structures, and improve overall flow. Cut anything that doesn't serve the narrative.  3) FIX REPETITIVE LANGUAGE: Identify and vary repeated words, phrases, and imagery. Particularly watch for overused descriptors and emotional states.  4) ELIMINATE AWKWARD PHRASING: Restructure convoluted sentences that contain excessive clauses or redundant concepts (e.g., \"their interconnected fates intertwining\").  5) TRIM OVER-DESCRIPTION: Remove dense, excessive imagery that slows narrative momentum. Keep vivid details that matter; cut those that create drag.  6) BALANCE TONE: Ensure a natural flow between introspection and action. Neither should overwhelm the other unless stylistically intentional.  7) STRENGTHEN CHARACTER AGENCY: Emphasize characters' internal conflicts and growth to deepen emotional stakes. Make their choices drive the narrative.  8) REDUCE CLICHÉS: Replace common phrases and tired imagery with fresh language while maintaining thematic consistency.  9) ADD FORWARD MOMENTUM: Ensure the chapter's ending creates a sense of progression in the larger narrative, whether through subtle shifts or major developments.  10) STRENGTHEN DIALOGUE: Make character voices distinct and consistent with their personalities and the stakes of their situations.  11) MAKE ANY ADDITIONAL IMPROVEMENTS: As a top-grossing screenwriter, use your expertise to make any other enhancements you deem necessary for maximum impact, even if not explicitly listed above.  12) Always output your polished chapter in plain text format. Always answer here in the chat stream. Never open a craft. Present only the polished chapter itself without any notes, comments, explanations, or other text. Do not add a chapter title. I will ask you for it on the next prompt. Now, polish this draft: \\n${GLOBAL_CHAPTER_NAME}\\n${GLOBAL_CHAPTER_CONTENT}",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"chat-footer-top\"]/div[3]/div[2]/button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"chat-footer-top\"]/div[3]/div[2]/button[2]",
+        "xpath=//div[3]/div[2]/button[2]",
+        "css=#chat-footer-top > div.flex.items-stretch.justify-between.gap-1 > div.ml-auto.flex.items-center.gap-2 > button.whitespace-nowrap.rounded-md.font-medium.transition-colors.focus-visible:outline-none.focus-visible:ring-1.focus-visible:ring-ring.disabled:pointer-events-none.disabled:opacity-50.select-none.text-sm.bg-primary.text-primary-foreground.hover:bg-primary/90.shadow.T103_3.T104_4.T101_4.T102_2.T105_3.T106_3.T107_3.group.flex.h-10.w-10.items-center.justify-center.gap-2.p-0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "75000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "editContent",
+      "Target": "xpath=//*[@id=\"tiptap-container\"]/div",
+      "Value": "Now give me a Chapter Title for the Chapter you just refined and gave me. No comments, no notes, no labels. Just give me the Title.",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"chat-footer-top\"]/div[3]/div[2]/button[2]",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"chat-footer-top\"]/div[3]/div[2]/button[2]",
+        "xpath=//div[3]/div[2]/button[2]",
+        "css=#chat-footer-top > div.flex.items-stretch.justify-between.gap-1 > div.ml-auto.flex.items-center.gap-2 > button.whitespace-nowrap.rounded-md.font-medium.transition-colors.focus-visible:outline-none.focus-visible:ring-1.focus-visible:ring-ring.disabled:pointer-events-none.disabled:opacity-50.select-none.text-sm.bg-primary.text-primary-foreground.hover:bg-primary/90.shadow.T103_3.T104_4.T101_4.T102_2.T105_3.T106_3.T107_3.group.flex.h-10.w-10.items-center.justify-center.gap-2.p-0"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "10000",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}
